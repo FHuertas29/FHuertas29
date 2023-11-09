@@ -6,4 +6,4 @@ streamlit
 ydata_profiling
 streamlit-pandas-profiling
 tensorflow
-PIL
+Pillow>=8.0.0
