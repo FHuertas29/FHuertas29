@@ -6,6 +6,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 from PIL import Image
+from joblib import load
 
 side_bar = st.sidebar
 
@@ -16,7 +17,8 @@ if selectbox == 'Heart Attack Predicton App':
 
     # Load the pickled model
     with open('model.pkl', 'rb') as f:
-    	classifier = pickle.load(f)
+	    classifier = load(f)
+
 
     def prediction(PhysicalHealthDays, GeneralHealth, RemovedTeeth, HadAngina, HadStroke, HadCOPD, HadKidneyDisease, HadArthritis, HadDiabetes, DeafOrHardOfHearing,
 	               DifficultyWalking, SmokerStatus, ChestScan, AgeCategory, PneumoVaxEver):
