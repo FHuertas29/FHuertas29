@@ -7,4 +7,4 @@ ydata_profiling
 streamlit-pandas-profiling
 tensorflow
 Pillow>=8.0.0
-scikit-learn==0.24.2
+scikit-learn==1.2.2
