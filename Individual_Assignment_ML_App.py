@@ -15,8 +15,7 @@ selectbox = side_bar.selectbox('Choose an app:',('Heart Attack Predicton App', '
 if selectbox == 'Heart Attack Predicton App':
 
     # Load the pickled model
-    with open('model.pkl', 'rb') as f:
-    	classifier = pickle.load(f)
+    classifier = pickle.load(open('model.pkl', 'rb'))
 
     def prediction(PhysicalHealthDays, GeneralHealth, RemovedTeeth, HadAngina, HadStroke, HadCOPD, HadKidneyDisease, HadArthritis, HadDiabetes, DeafOrHardOfHearing,
 	               DifficultyWalking, SmokerStatus, ChestScan, AgeCategory, PneumoVaxEver):
