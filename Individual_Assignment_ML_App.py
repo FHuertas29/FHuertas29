@@ -11,7 +11,7 @@ from joblib import load
 side_bar = st.sidebar
 
 side_bar.header("Please select one of the following apps.")
-selectbox = side_bar.selectbox('Choose an app:',('Heart Attack Predicton App', 'Pneumonia Prediction App'))
+selectbox = side_bar.selectbox('Choose an app:',('Heart Attack Prediction App', 'Pneumonia Prediction App'))
 
 if selectbox == 'Heart Attack Predicton App':
 
